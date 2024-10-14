@@ -23,7 +23,7 @@ public class LionTest {
     }
 
     @Test
-    public void testDoesHaveMane() throws Exception {
+    public void testDoesHaveMane() {
         // Проверка что у самца есть грива
         assertTrue(lion.doesHaveMane());
     }

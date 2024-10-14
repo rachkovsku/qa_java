@@ -29,9 +29,7 @@ public class AnimalTest {
 
         Animal animal = new Animal();
 
-        Exception exception = assertThrows(Exception.class, () -> {
-            animal.getFood("Непонятное животное");
-        });
+        Exception exception = assertThrows(Exception.class, () -> animal.getFood("Непонятное животное"));
         assertEquals("Неизвестный вид животного, используйте значение Травоядное или Хищник", exception.getMessage());
     }
 
